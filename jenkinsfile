@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerId') {
-                    sh 'docker tag calculator calc_demo/calculator:latest'
-                    sh 'docker push calc_demo/calculator'
+                    sh 'docker tag calculator calc_demo:latest'
+                    sh 'docker push calc_demo'
                     }
                  }
             }

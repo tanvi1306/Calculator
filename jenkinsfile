@@ -29,8 +29,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerId') {
-                    sh 'docker tag calculator tanvi1306/calc_demo:latest'
-                    sh 'docker push tanvi1306/calc_demo:latest'
+                    sh 'docker tag calculator iiitb/calculator:latest'
+                    sh 'docker push iiitb/calculator'
                     }
                  }
             }

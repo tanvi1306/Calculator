@@ -6,7 +6,7 @@
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "calculator"
+        name: "tanvi1306/calculator"
         source: pull
       register: docker_pull_result
 

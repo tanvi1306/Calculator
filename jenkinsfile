@@ -29,7 +29,7 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerId') {
-                    sh 'docker tag calculator iiitb/calculator:latest'
+                    sh 'docker tag calculator calc_demo:latest'
                     sh 'docker push calculator:latest'
                     }
                  }
